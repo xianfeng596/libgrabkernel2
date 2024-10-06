@@ -14,6 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: install ldid
+      run: brew install ldid
+
     - name: run make
       run: make
 
