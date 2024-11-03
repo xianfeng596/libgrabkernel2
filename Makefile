@@ -6,7 +6,7 @@ CC := clang
 
 TARGET ?= ios
 
-CFLAGS ?= -Wall -Werror -Wno-unused-command-line-argument -Iinclude -I_external/include -fPIC -fobjc-arc -O3
+CFLAGS ?= -Wall -Werror -Wno-unused-command-line-argument -Iinclude -I_external/include -fPIC -fno-objc-arc -O3
 LDFLAGS ?= -framework Foundation -framework Security -L_external/lib/$(TARGET) -lz -lpartial
 
 ifeq ($(TARGET), macos)
